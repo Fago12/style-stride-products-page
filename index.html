@@ -1,0 +1,183 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- favicon -->
+    <link rel="icon" href="./favicon.png" type="image/png" />
+    <title>Products | StyleStride</title>
+    <!-- boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- preload images -->
+    <link rel="preload" as="image" href="./images/hero-pic.jpg">
+  </head>
+  <body>
+    <header id="top">
+      <!-- navbar -->
+      <nav class="navbar" data-header>
+        <div class="nav-center">
+          <button class="toggle-nav nav-icon" data-nav-toggler>
+            <i class="bx bx-menu"></i>
+          </button>
+
+          <div class="nav-logo">
+            <h1>Style <span>Stride</span></h1>
+          </div>
+
+          <div class="toggle-cart">
+            <button class="cart-btn nav-icon">
+              <i class="bx bx-shopping-bag"></i>
+            </button>
+            <div class="cart-items-count">0</div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+      <div class="side-menu" data-navbar>
+        <div class="sidebar-header">
+          <div class="nav-logo">
+            <h1>Style <span>Stride</span></h1>
+          </div>
+
+          <button class="nav-close-btn" data-nav-toggler="">
+            <i class="bx bx-x"></i>
+          </button>
+        </div>
+
+        <ul class="sidebar-links">
+          <li><a href="#" class="nav-link" data-nav-link>Home</a></li>
+          <li><a href="#" class="nav-link" data-nav-link>Products</a></li>
+        </ul>
+      </div>
+
+      <!-- overlay -->
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </aside>
+
+    <!-- hero -->
+    <section class="page-hero">
+      <div class="section-center">
+        <h3 class="page-hero-title">
+          Home <i class="bx bxs-chevron-right"></i> Products
+        </h3>
+      </div>
+    </section>
+
+    <!-- products -->
+    <section class="products">
+      <div class="filters">
+        <div class="filters-container">
+          <!-- search filter -->
+          <form class="input-form">
+            <input type="text" class="search-input" placeholder="Search..." />
+          </form>
+
+          <!-- categories filter -->
+          <h4>Category</h4>
+          <article class="categories">
+            <button class="category-btn">All</button>
+            <button class="category-btn">Men</button>
+          </article>
+
+          <!-- price filter -->
+          <h4>Price</h4>
+          <p class="price-value"></p>
+          <form class="price-form">
+            <input
+              type="range"
+              class="price-filter"
+              min="0"
+              value="50"
+              max="100"
+            />
+          </form>
+        </div>
+      </div>
+
+      <!-- products container -->
+      <div class="products-container">
+        <!-- single product -->
+        <!-- <article class="product">
+          <div class="img-container">
+            <img src="./images/img-10.jpg" alt="product" class="product-img" />
+
+            <button class="bag-btn">
+              <i class="bx bxs-cart-alt"></i>
+              add to cart
+            </button>
+          </div>
+
+          <h3>men shoes</h3>
+
+          <h4>$20</h4>
+        </article> -->
+      </div>
+    </section>
+
+    <!-- cart -->
+    <div class="cart-overlay">
+      <div class="cart">
+        <span class="close-cart">
+          <i class="bx bx-x"></i>
+        </span>
+
+        <h2>your cart</h2>
+
+        <div class="cart-content">
+          <!-- single cart item -->
+          <!-- <div class="cart-item">
+            <img src="./images/img-12.jpg" alt="product" />
+
+            <div>
+              <h4>men shoes</h4>
+              <h5>$9.00</h5>
+              <span class="remove-item">remove</span>
+            </div>
+
+            <div>
+              <i class="bx bx-chevron-up"></i>
+              <p class="item-amount">1</p>
+              <i class="bx bx-chevron-down"></i>
+            </div>
+          </div> -->
+        </div>
+        <div class="cart-footer">
+          <h3>your total: $<span class="cart-total">0</span></h3>
+          <button class="clear-cart clear-btn">clear cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <h5>
+        &copy; <span id="date"></span><span class="logo"> StyleStride </span>
+      </h5>
+      <h5>All rights reserved</h5>
+    </footer>
+
+    <!-- back to top -->
+    <a href="#top" class="back-top-btn" data-back-top-btn>
+      <i class="bx bx-up-arrow-alt"></i>
+    </a>
+    
+    <div class="page-loading">
+      <h2>Loading...</h2>
+    </div>
+    
+    <!-- contentful -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    
+    <!-- index.js -->
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
