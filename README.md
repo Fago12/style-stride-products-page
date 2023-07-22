@@ -20,7 +20,7 @@ This project fetches products from Contentful. Initially, it utilized a product.
 - Support for filtering by search, categories, and price, and some other cool features
 
 ## Demo
-A link would be provided soon
+Live link: [Style Stride](https://style-stride-products-page-fago12.vercel.app/)
 
 ## Technologies Used
 - HTML
